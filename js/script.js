@@ -16,7 +16,7 @@ function konversi() {
 }
 
 // Konversi dari Fahrenheit ke Celcius
-function balikkan() {
+function reverse() {
   const fValue = parseFloat(fInput.value);
   if (isNaN(fValue)) {
     alert("Masukkan suhu dalam Fahrenheit terlebih dahulu!");
@@ -29,7 +29,7 @@ function balikkan() {
 }
 
 // Bersihkan semua input
-function bersihkan() {
+function hapus() {
   cInput.value = "";
   fInput.value = "";
   explanation.value = "";
