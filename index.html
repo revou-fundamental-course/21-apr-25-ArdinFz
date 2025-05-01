@@ -8,44 +8,47 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <header>
-    <h1>Kalkulator Suhu - ArdinFz</h1>
-  </header>
+  <div class="container">
+    <header>
+      <h1>Kalkulator Suhu - ArdinFz</h1>
+    </header>
 
-  <main>
-    <section>
-      <p>Kalkulator untuk mengubah suhu dari Celcius ke Fahrenheit dan sebaliknya</p>
-    </section>
+    <main>
+      <section>
+        <p>Kalkulator untuk mengubah suhu dari Celcius ke Fahrenheit dan sebaliknya</p>
+      </section>
 
-    <section class="section-content">
-      <div class="section-item">
-        <label for="input-c">Suhu dalam Celcius (&deg;C):</label>
-        <input type="number" id="input-c" placeholder="Masukkan suhu °C"/>
-      </div>
+      <section class="section-content">
+        <div class="section-item">
+          <label for="input-c">Suhu dalam Celcius (&deg;C):</label>
+          <input type="number" id="input-c" placeholder="Masukkan suhu °C"/>
+        </div>
 
-      <div class="section-item button-group">
-        <button class="btn_konversi" onclick="konversi()">Konversi</button>
-        <button class="btn_hapus" onclick="bersihkan()" type="reset">Hapus</button>
-        <button class="btn_reverse" onclick="balikkan()">Reverse</button>
-      </div>
-    </section>
+        <div class="section-item button-group">
+          <button class="btn_konversi" onclick="konversi()">Konversi</button>
+          <button class="btn_hapus" onclick="bersihkan()" type="reset">Hapus</button>
+          <button class="btn_reverse" onclick="balikkan()">Reverse</button>
+        </div>
+      </section>
 
-    <section class="section-content">
-      <div class="section-item">
-        <label for="input-f">Suhu dalam Fahrenheit (&deg;F):</label>
-        <input type="number" id="input-f" />
-      </div>
-    </section>
+      <section class="section-content">
+        <div class="section-item">
+          <label for="input-f">Suhu dalam Fahrenheit (&deg;F):</label>
+          <input type="number" id="input-f" />
+        </div>
+      </section>
 
-    <section class="section-content">
-      <div class="section-item">
-        <label for="penjelasan">Proses Perhitungan:</label>
-        <textarea id="penjelasan" rows="4" readonly></textarea>
-      </div>
-    </section>
-  </main>
+      <section class="section-content">
+        <div class="section-item">
+          <label for="penjelasan">Proses Perhitungan:</label>
+          <textarea id="penjelasan" rows="4" readonly></textarea>
+        </div>
+      </section>
+    </main>
 
-  <footer>&copy; 2025 ArdinFz. All rights reserved.</footer>
+    <footer>&copy; 2025 ArdinFz. All rights reserved.</footer>
+  </div>
+
   <script src="./js/script.js"></script>
 </body>
 </html>
